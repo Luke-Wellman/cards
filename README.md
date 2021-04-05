@@ -3,7 +3,7 @@ This is my code submission for CMP1903M (Object Oriented Programming) Assignment
 ## What is this project ?
 This is a C# project for my University assignment for first year. The assignment states I must create the program specified and ask others to review my code, as well as code reviewing other peoples code.
 ## The program
-<img src ="https://ibb.co/gVVTP7w">
+<img src ="https://user-images.githubusercontent.com/30006118/113580474-b502a700-961d-11eb-8851-e5dad5abc6a2.png">
 
 ## Code Review
 
