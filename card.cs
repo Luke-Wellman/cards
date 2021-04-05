@@ -1,7 +1,8 @@
 namespace cards
 {
-    public class card
+    public class Card
     {
-        
+        public string Suit {get; set;}
+        public string Value { get; set; }
     }
 }
