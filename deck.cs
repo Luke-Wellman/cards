@@ -21,20 +21,21 @@ namespace cards
                     deck.Add(card);
                 }
             }
-            foreach (var item in deck)
-            {
-                Console.WriteLine($"{item.Value} of {item.Suit}'s");
-            }
+            Console.WriteLine("New deck created");
         }
 
-        public void isEmpty()
+        public bool isEmpty()
         {
-            
+            if (deck == null)
+            {
+                return true;
+            }
+            return false;
         }
 
         public void shuffle()
         {
-
+            
         }
 
         public void deal()
