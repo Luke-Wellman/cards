@@ -21,13 +21,13 @@ namespace cards
                     deck.Push(card);
                 }
             }
-            Console.WriteLine("New deck created");
+            Console.WriteLine("\n!!New deck created!!\n");
         }
         public bool isEmpty()
         {
             if (deck.Count == 0)
             {
-                Console.WriteLine("Deck is empty!");
+                Console.WriteLine("\nDeck is empty!");
                 return true;
             }
             return false;
@@ -45,12 +45,36 @@ namespace cards
                 list[n]= value;
             }
             deck = new Stack<Card>(list);
-            Console.WriteLine("Deck Shuffled");
+            Console.WriteLine("\nDeck Shuffled");
         }
         public void deal()
         {
             Console.WriteLine($"{deck.Peek().Value} of {deck.Peek().Suit}'s");
             deck.Pop();
-        }       
+        }
+        public void dealerMenu()
+        {
+            Console.Clear();
+            while(isEmpty() != true)
+            {
+                Console.WriteLine("ENTER to deal a new card | S to Shuffle | Q to Quit");
+                switch (Console.ReadLine().ToLower())
+                {
+                    case "":
+                        deal();
+                        break;
+                    case "s":
+                        shuffle();
+                        break;
+                    case "q":
+                        deck = new Stack<Card>();
+                        break;
+                    default:
+                        break;
+                }
+                
+            }
+            
+        }
     }
 }

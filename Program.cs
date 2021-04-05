@@ -7,12 +7,25 @@ namespace cards
         static void Main(string[] args)
         {
             Deck deck = new Deck();
-            deck.newDeck();
-            deck.shuffle();
-            while(deck.isEmpty() != true)
+            while(true)
             {
-                deck.deal();
-            }   
+                Console.Clear();
+                Console.WriteLine("Card Dealer!\nENTER to create a new deck\nQ to Quit");
+                switch (Console.ReadLine().ToLower())
+                {
+                    case "":
+                        deck.newDeck();
+                        deck.shuffle();
+                        deck.dealerMenu();
+                        break;
+                    case "q":
+                        System.Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Oops!");
+                        break;
+                }
+            }
         }
     }
 }
