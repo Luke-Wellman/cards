@@ -37,3 +37,8 @@ This is a C# project for my University assignment for first year. The assignment
 > </ol>
 [More info on how to do code reviews in github](https://github.com/features/code-review/)<br/>
 [Googles guidelines on code reviews](https://google.github.io/eng-practices/review/)
+## How to run the code
+Run this in a terminal open into the program files
+```
+dotnet run
+```
