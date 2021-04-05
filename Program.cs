@@ -8,6 +8,11 @@ namespace cards
         {
             Deck deck = new Deck();
             deck.newDeck();
+            deck.shuffle();
+            while(deck.isEmpty() != true)
+            {
+                deck.deal();
+            }   
         }
     }
 }
